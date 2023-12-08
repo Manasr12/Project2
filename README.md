@@ -30,7 +30,14 @@ Rotoscoping in this project involves frame-by-frame manipulation to create anima
   - **Applying the Overlay**: Ensures boundary checks and alpha value conditions to blend the eyes image seamlessly.
   - **Updating Views**: Refreshes the display to show the updated frame with the bulging eyes effect.
 
-[Include similar detailed descriptions for the Red Outlining effect as per your project implementation here.]
+#### Draw Red Lines (Outlined Drawings)
+- **Code Functionality**: This segment of code is responsible for drawing red lines or squares around certain points in the video, typically used for outlining characters or objects.
+- **Implementation Details**:
+  - **Base Image Preparation**: Similar to other effects, it starts by copying the initial image to the current working image.
+  - **Iterating Over Points**: Loops through a list of points (`m_draw`) where the red outlines should be drawn in the current frame (`m_movieframe`).
+  - **Drawing Red Squares**: For each point, it draws a 30x30 red square around the point. This is achieved by iterating through a 30x30 pixel area centered on the point.
+  - **Boundary Checks**: Ensures that the drawing does not exceed the image boundaries.
+  - **Color Setting**: Sets the color of the selected pixels to red (255, 0, 0) to create the red outline.
 
 ### II. Image Warping
 Image Warping allows for both linear and non-linear manipulation of image content.
