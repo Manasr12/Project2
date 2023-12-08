@@ -65,8 +65,3 @@ Keying involves blending two images based on computed alpha values.
   - **Alpha Calculation**: Uses the Vlahos method to calculate alpha values for blending.
   - **Image Blending**: Blends the foreground and background images based on the computed alpha values.
 
-#### Clamping Function
-- **Code Functionality**: Ensures values stay within a specified range.
-- **Implementation Details**:
-  - **Boundary Enforcement**: Clamps values to stay within minimum and maximum limits.
-  - **Usage in Alpha Calculation**: Particularly used in alpha value calculations to maintain realistic transparency levels.
