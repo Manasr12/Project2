@@ -1,20 +1,36 @@
 # RotoScope Project README
 
 ## Overview
-The RotoScope project is an advanced software tool for video editing and image manipulation. It implements techniques such as rotoscoping, image warping, and keying or color effects. This README provides in-depth insights into the project's functionalities, specifically the coding aspects of each effect.
+The RotoScope project is an advanced software tool for video editing and image manipulation, implementing various techniques such as rotoscoping, image warping, and keying or color effects. This README provides detailed insights into the project's functionalities, focusing on the coding aspects of each effect in the Rotoscoping category.
 
 ## Categories and Effects
 
 ### I. Rotoscoping
 Rotoscoping in this project involves frame-by-frame manipulation to create animations or effects.
 
-#### Overlaying Items (Bird, Cowboy Hat, Eyes)
-- **Code Functionality**: These methods overlay elements like birds, cowboy hats, and eyes onto the current image frame.
+#### Phaser (Laser-like Weapon)
+- **Code Functionality**: This code adds a laser-like effect, represented as a Phaser, onto the video frames.
 - **Implementation Details**:
-  - **Pixel Iteration**: Loops through each pixel of the overlay images (`m_bird`, `m_cowboy`, `m_eyes`) and the current frame.
-  - **Positioning**: Calculates the position for overlaying based on user interaction (click position).
-  - **Boundary Checking**: Ensures the overlay does not exceed image boundaries.
-  - **Alpha Blending**: Applies alpha blending to integrate the overlay smoothly with the underlying image.
+  - **Initial Image Copying**: The process begins by copying the initial image to the current frame.
+  - **Overlaying Phaser**: Iterates over user-clicked points (`m_draw`) where the Phaser should appear.
+  - **Positioning and Alpha Blending**: For each clicked position, the Phaser image is placed with alpha blending, ensuring it appears seamlessly integrated into the scene.
+
+#### Cowboy Hat
+- **Code Functionality**: The code overlays a cowboy hat image onto the video frames.
+- **Implementation Details**:
+  - **Copying Base Image**: Similar to the Phaser, it starts by preparing the base frame.
+  - **Calculating Hat Position**: Adjusts the clicked position to center the cowboy hat image over it.
+  - **Overlaying the Hat**: Checks boundaries and alpha values to overlay the cowboy hat image, blending it with the current frame.
+
+#### Bulging Eyes
+- **Code Functionality**: Overlays an exaggerated eyes image onto the video frames.
+- **Implementation Details**:
+  - **Initial Image Copying**: Copies pixel data from an initial image to the current working image.
+  - **Overlaying Eyes**: Iterates over user-clicked points and calculates the position for overlaying the eyes image.
+  - **Applying the Overlay**: Ensures boundary checks and alpha value conditions to blend the eyes image seamlessly.
+  - **Updating Views**: Refreshes the display to show the updated frame with the bulging eyes effect.
+
+[Include similar detailed descriptions for the Red Outlining effect as per your project implementation here.]
 
 ### II. Image Warping
 Image Warping allows for both linear and non-linear manipulation of image content.
