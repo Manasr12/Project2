@@ -1,15 +1,14 @@
 # RotoScope Project README
 
 ## Overview
-The RotoScope project is an advanced software tool for video editing and image manipulation, implementing various techniques such as rotoscoping, image warping, and keying or color effects. This README provides detailed insights into the project's functionalities, focusing on the coding aspects of each effect in the Rotoscoping category.
-
+This README provides detailed insights into the project's functionalities, focusing on the coding aspects of each effect. 
 ## Categories and Effects
 
 ### I. Rotoscoping
 Rotoscoping in this project involves frame-by-frame manipulation to create animations or effects.
 
 #### Phaser (Laser-like Weapon)
-- **Code Functionality**: This code adds a laser-like effect, represented as a Phaser, onto the video frames.
+- **Code Functionality**: This code adds a Phaser onto the video frames.
 - **Implementation Details**:
   - **Initial Image Copying**: The process begins by copying the initial image to the current frame.
   - **Overlaying Phaser**: Iterates over user-clicked points (`m_draw`) where the Phaser should appear.
